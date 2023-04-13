@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Magazine</title>
+  <style>
+    .header {
+      display: flex;
+      justify-content: center;
+      border: solid;
+      background-color: lightgreen;
+    }
+    .navbar {
+      display: flex;
+      color: white;
+      flex-direction: row;
+      align-content:space-around;
+      background-color: black;
+    }
+    h1 {
+      margin-right: 15px;
+    }
+    .container {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .lifestyle {
+        float: left;
+        border: solid green;
+    }
+    .business {
+      float:right;
+      border: solid green;
+    }
+    .sports {
+      float:right;
+      border: solid green;
+    }
+    @media only screen and (max-width: 480px) {
+      .header {
+        background-color: red;}
+        .header, .sports, .business {
+          display: none;
+        }
+      .lifestyle {
+        display: block;
+      }
+      }
+  /* CSS styles for smartphones go here */
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+  /* CSS styles for tablets go here */
+  .header {
+    background-color: blue;}
+  .header, .sports {
+    display: none;
+  }
+  .lifestyle, .business {
+    display: block;
+  }
+  }
+
+@media only screen and (min-width: 1025px) {
+  /* CSS styles for laptops go here */
+  .header {
+    background-color: orange;
+  }
+  .header, .sports, .lifestyle, .business {
+    display: block;
+  }
+}
+  </style>
+</head>
+<body>
+  <div class="header"><h1>Online Magazine</h1></div>
+  <nav class="navbar">
+      <h1>Home</h1>
+      <h1>About Us</h1>
+      <h1>Contact Us</h1>
+    </ul>
+  </nav>
+  <main class="container">
+    <section class="lifestyle">
+   <h1>Lifestyle</h1>
+   <p>Lorem ipsum dolor sit amet,</p><br>
+   <p>consectetur adipiscing elit. Maecenas</p><br>
+   <p>sit amet pretium urna.</p>
+  </section>
+    <section class="sports">
+  <h1>Sports</h1>
+  <p>Quisque vehicula,risus eget aliquam</p><br>
+  <p>placerat,purus leo tincidunt eros, eget</p><br>
+  <p>luctus quam orci in velit.</p>
+    </section>
+    <section class="business">
+  <h1>Business</h1>
+  <p>Vivamus venenatis velit nec neque</p><br>
+  <p>ultricies, eget elementium magna</p><br>
+  <p>tristique.</p>
+    </section>
+  </main>
+</body>
+</html>
