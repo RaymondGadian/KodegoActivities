@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox</title>
+  <style>
+    body {
+			font-size: 16px;
+		}
+
+		@media screen and (max-width: 768px) {
+			body {
+				font-size: 14px;
+			}
+		}
+
+    .head {
+      display: flex;
+      border-radius: 90px;
+      border: solid;
+      height: 100px;
+      padding-top: 20px;
+      justify-content: center;
+      background-color: aqua;
+      font-size: 30px;
+    }
+    .main {
+      display: flex;
+      background-color: green;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+  align-content: space-between;
+  height: 400px;
+  border-radius: 80px;
+  flex-direction: row;
+  column-count: auto;
+  width: 80%;
+	margin: 0 auto;
+	flex-wrap: wrap;
+	justify-content: space-between;
+  margin-top: 10px;
+    }
+    .item {
+      border: solid;
+      background-color: darkgreen;
+      width:fit-content;
+			margin-bottom: 20px;
+			padding: 10px;
+    }
+    .nav {
+      float: right;
+      background-color: darkred;
+      height: 450px;
+      border-radius: 90px;
+    }
+    .footer {
+      background-color: blue;
+    }
+    @media screen and (max-width: 768px) {
+			.item {
+				width: 45%;
+			}
+		}
+
+		@media screen and (max-width: 480px) {
+			.item {
+				width: 100%;
+			}
+  </style>
+</head>
+<body>
+  <div class="head">
+    <header><h>header</h></header>
+  </div>
+  <div class="nav"><h1>Sidebar</h1></div>
+    <div class="main">
+      <div class="item"><h1>item</h1></div>
+      <div class="item"><h1>item</h1></div>
+      <div class="item"><h1>item</h1></div>
+      <div class="item"><h1>item</h1></div>
+      <div class="item"><h1>item</h1></div>
+      <div class="item"><h1>item</h1></div>
+      <div class="item"><h1>item</h1></div>
+      <div class="item"><h1>item</h1></div>
+      <div class="item"><h1>item</h1></div>
+      <div class="item"><h1>item</h1></div>
+      <div class="item"><h1>item</h1></div>
+    </div>
+    <div class="footer">
+      <h1>Footer</h1>
+    </div>
+</body>
+</html>
